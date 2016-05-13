@@ -19,10 +19,12 @@ body {
 }
 
 #starwars-app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .show-quiz {
-  // display: flex;
 }
 .timer {
     border: 1px solid orange;
@@ -31,7 +33,6 @@ body {
     padding: 10px 20px;
     background: black;
     width: 80px;
-    // position: absolute;
 }
 
 .question-box {

@@ -1,46 +1,62 @@
 import React from 'react';
 import {browserHistory} from 'react-router';
 
+let correctAnswer = 0;
+
 let question = [
   {question:'What does Darth Vader say to Luke Skywalker in Episode 5?',
-  answer: 'No. I am your father.'},
+  answer: '1'},
   {question:'Every Star Wars movie has been released in which month?',
-  answer: 'May'},
+  answer: '2'},
   {question: 'How many languages is C3PO fluent in?',
-  answer: 'Over six million'}
+  answer: '3'}
 ]
+
+// 1 No. I am your father.
+// 2 May
+// 3 Over six million
 
 export default class QuestionBox extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      question: 0,
-      correct: 0
+      current: 0,
     }
   }
 
-  _submitAnswer(){
-     this.refs.quizInput.value === question[this.state.question].answer ? this.setState({ correct: this.state.correct += 1}) : this.setState({ correct: this.state.correct});
-     this.setState({ question: this.state.question += 1});
+  _submitAnswer(e){
+      e.preventDefault();
+    let userInput = this.refs.quizInput.value.toLowerCase();
+    let correctInput = question[this.state.current].answer.toLowerCase();
+
+    if (userInput === correctInput) {
+      correctAnswer ++;
+    }
+
+     this.setState({ question: this.state.question + 1 });
+     this.refs.quizInput.value = '';
+
+     if (this.state.current === question.length -1) {
+       this._lastQuestion();
+     }
   }
 
-  _submitted(e){
-    e.preventDefault();
-    {this._submitAnswer();
-    this.refs.quizInput.value = '';}
+  _lastQuestion() {
+    correctAnswer === question.length ?
+      browserHistory.push('/accepted') :
+      browserHistory.push('/rejected');
   }
 
   render() {
     return(
         <div className="question-box">
           <h3>{question[this.state.question].question}</h3>
-          <form onSubmit={this._submitted.bind(this)}>
+          <form onSubmit={this._submitAnswer.bind(this)}>
             <input type="text" ref="quizInput"/>
+            <button className="submit-button">
+                <span className="uppercase">Submit answer</span>
+            </button>
           </form>
-          <button className="submit-button"
-                  onClick={this._submitAnswer.bind(this)}>
-            <span className="uppercase">Submit answer</span>
-          </button>
         </div>
 
     )
