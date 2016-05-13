@@ -1,0 +1,44 @@
+
+.timer {
+    border: 1px solid orange;
+    color: #37cd1f;
+    font-size: 40px;
+    padding: 10px 20px;
+    background: black;
+    width: 80px;
+}
+
+.question-box {
+  background: white;
+  width: 500px;
+  height: 200px;
+  @extend .center;
+  flex-direction: column;
+  line-height: 1;
+  h3 {
+    color: #777777;
+  }
+  input {
+    width: 300px;
+  }
+  .submit-button {
+    width: 150px;
+    padding: 10px 20px;
+  }
+}
+.uppercase {
+  text-transform: uppercase;
+}
+
+.accept {
+  background: rgba(29, 201, 46, 0.45);
+  width: 100vw;
+  height: 100vh;
+  @extend .center;
+}
+.reject {
+  background: rgba(189, 36, 36, 0.65);
+  width: 100vw;
+  height: 100vh;
+  @extend .center;
+}

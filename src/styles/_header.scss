@@ -1,0 +1,24 @@
+.side-bar {
+  width: 158px;
+  height: 100vh;
+  background: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+
+  .starwars {
+    text-transform: uppercase;
+    color: #a3a3a3;
+    transform: rotate(270deg);
+    font-size: 70px;
+    font-weight: bold;
+  }
+  .circle-logo {
+    background: black;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    align-self: center;
+  }
+}

@@ -3,13 +3,12 @@ import ReactDOM from 'react-dom';
 import { Router, Route, browserHistory, Redirect } from 'react-router';
 
 import Welcome from './components/welcome.jsx';
-import Timer from './components/timer.jsx';
 import Quiz from './components/quiz.jsx';
+import NotFound from './components/error.jsx';
+import Accepted from './components/accepted.jsx';
+import Rejected from './components/rejected.jsx';
 
 require ('./styles/main.scss');
-
-// Components
-
 
 class App extends React.Component {
 
@@ -20,9 +19,9 @@ class App extends React.Component {
         <Redirect from='/' to='/welcome'/>
         <Route path='/welcome' component={Welcome}/>
         <Route path='/quiz' component={Quiz}/>
-        {/*<Route path='/accepted' component={Accepted}/>
+        <Route path='/accepted' component={Accepted}/>
         <Route path='/rejected' component={Rejected}/>
-        <Route path='*' component={NotFound}/>*/}
+        <Route path='/*' component={NotFound}/>
       </Router>);
   }
 }

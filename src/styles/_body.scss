@@ -1,0 +1,19 @@
+body {
+  font-size: 16px;
+  font-family: 'opensans', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  color: #ffffff;
+  display: flex;
+}
+#starwars-app {
+  @extend .center;
+  background:
+  linear-gradient( to bottom,
+      rgba(0, 0, 0, 0.20) 0%,
+      rgba(0, 0, 0, 0.20)
+      100%),
+  url(../images/starwars.jpg) no-repeat center center;
+  width: 100vw;
+  height: 100vh;
+}

@@ -33,7 +33,9 @@ export default class QuestionBox extends React.Component {
       correctAnswer ++;
     }
 
-     this.setState({ question: this.state.question + 1 });
+     if (this.state.current < question.length -1){
+       this.setState({ current: this.state.current + 1 })
+     };
      this.refs.quizInput.value = '';
 
      if (this.state.current === question.length -1) {
@@ -50,7 +52,7 @@ export default class QuestionBox extends React.Component {
   render() {
     return(
         <div className="question-box">
-          <h3>{question[this.state.question].question}</h3>
+          <h3>{question[this.state.current].question}</h3>
           <form onSubmit={this._submitAnswer.bind(this)}>
             <input type="text" ref="quizInput"/>
             <button className="submit-button">
