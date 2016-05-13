@@ -14,7 +14,7 @@ let question = [
 
 // 1 No. I am your father.
 // 2 May
-// 3 Over six million
+// 3 Over 6 million
 
 export default class QuestionBox extends React.Component {
   constructor(props) {
@@ -31,7 +31,7 @@ export default class QuestionBox extends React.Component {
 
     if (userInput === correctInput) {
       correctAnswer ++;
-    }
+    };
 
      if (this.state.current < question.length -1){
        this.setState({ current: this.state.current + 1 })
@@ -40,7 +40,7 @@ export default class QuestionBox extends React.Component {
 
      if (this.state.current === question.length -1) {
        this._lastQuestion();
-     }
+     };
   }
 
   _lastQuestion() {

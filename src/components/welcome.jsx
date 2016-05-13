@@ -22,7 +22,6 @@ export default class Welcome extends React.Component {
               onClick={this._loadBeginButton.bind(this)}>
             Start Test
             </button>
-            <h1 className="uppercase">May the force be with you</h1>
       </div>)
   }
 }
