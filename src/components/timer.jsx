@@ -1,7 +1,7 @@
 import React from 'react';
 import {browserHistory} from 'react-router';
 
-import Quiz from './testscreen.jsx';
+import Quiz from './quiz.jsx';
 
 
 export default class Timer extends React.Component {

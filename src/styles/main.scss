@@ -1,10 +1,13 @@
 @import "reset";
+@import "fonts";
 
 body {
   width: 100vw;
   height: 100vh;
   font-size: 16px;
-  font-family: sans-serif;
+  font-family: 'opensans', sans-serif;
+  font-weight: normal;
+  font-style: normal;
   color: #ffffff;
   display: flex;
   background:
@@ -15,7 +18,12 @@ body {
   url(../images/starwars.jpg) no-repeat center center;
 }
 
+#starwars-app {
+}
 
+.show-quiz {
+  // display: flex;
+}
 .timer {
     border: 1px solid orange;
     color: #37cd1f;
@@ -23,7 +31,7 @@ body {
     padding: 10px 20px;
     background: black;
     width: 80px;
-    position: absolute;
+    // position: absolute;
 }
 
 .question-box {
@@ -68,10 +76,4 @@ body {
     width: 100px;
     align-self: center;
   }
-}
-
-.entire-box {
-  display:flex;
-  justify-content: center;
-  align-items: center;
 }

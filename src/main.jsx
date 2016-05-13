@@ -4,7 +4,7 @@ import { Router, Route, browserHistory, Redirect } from 'react-router';
 
 import Welcome from './components/welcome.jsx';
 import Timer from './components/timer.jsx';
-import Quiz from './components/testscreen.jsx';
+import Quiz from './components/quiz.jsx';
 
 require ('./styles/main.scss');
 
@@ -14,12 +14,12 @@ require ('./styles/main.scss');
 class App extends React.Component {
 
   render() {
-    
+
     return(
       <Router history={browserHistory}>
         <Redirect from='/' to='/welcome'/>
         <Route path='/welcome' component={Welcome}/>
-        <Route path='/evaluation' component={Quiz}/>
+        <Route path='/quiz' component={Quiz}/>
         {/*<Route path='/accepted' component={Accepted}/>
         <Route path='/rejected' component={Rejected}/>
         <Route path='*' component={NotFound}/>*/}

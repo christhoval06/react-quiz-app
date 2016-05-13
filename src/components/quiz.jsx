@@ -4,10 +4,6 @@ import {browserHistory} from 'react-router';
 import Timer from './timer.jsx';
 import QuestionBox from './questionbox.jsx';
 
-// let questions = [
-//   {Question:'',
-//   Answer: ''}
-// ]
 
 export default class Quiz extends React.Component {
 
@@ -28,15 +24,13 @@ export default class Quiz extends React.Component {
 
   _showQuiz() {
     return(
-      <div>
-        <div className="timer-box">
+      <div className="show-quiz">
           <Timer
         started={this.state.started}
         stopTimer={this._stopTimer.bind(this)}
         secondsRemaining="60"/>
-      </div>
         <QuestionBox />
-      </div>
+    </div>
     )
   }
 
