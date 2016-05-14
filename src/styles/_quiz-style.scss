@@ -20,7 +20,7 @@
   background: rgb(171, 171, 171);
   border: 0;
   &:hover {
-    background: rgba(54, 172, 209, 0.73);
+    background: rgba(25, 166, 210, 0.73);
   }
 }
 .question-box {
@@ -28,13 +28,17 @@
   width: 500px;
   height: 200px;
   @extend .center;
+  align-items: flex-start;
   flex-direction: column;
+  padding: 0 30px;
   h3 {
     color: #777777;
     margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 1.5;
   }
   input {
-    width: 300px;
+    width: 400px;
     outline: none;
     border-bottom: 1px solid rgb(92, 91, 90);
     border-top: 0;
@@ -51,13 +55,13 @@
     cursor: pointer;
     margin-bottom: 20px;
     color: white;
-    background: rgb(171, 171, 171);
+    background: rgb(173, 168, 168);
     border: 0;
     position: absolute;
     bottom: 40px;
     right: 40px;
     &:hover {
-      background: rgba(#20120c, 0.43);
+      background: rgba(#9c20b0, 0.61);
     }
   }
 }
@@ -66,7 +70,7 @@
 }
 
 .accept {
-  background: rgba(29, 201, 46, 0.45);
+  background: rgba(29, 201, 46, 0.65);
   @extend .font-page;
   @extend .width-height;
   @extend .center;

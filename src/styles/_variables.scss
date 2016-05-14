@@ -5,11 +5,26 @@
 }
 
 .width-height {
-  width: 100vw;
+  width: 89vw;
   height: 100vh;
 }
 
 .font-page {
   font-size: 40px;
-  font-weight:bold;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+// Mixin
+$tablet-width: 600px;
+@mixin tablet {
+     @media (min-width: $tablet-width){
+        @content;
+    }
+}
+$desktop-width: 1000px;
+@mixin desktop {
+     @media (min-width: $desktop-width){
+        @content;
+    }
 }

@@ -18,7 +18,7 @@ module.exports = {
       // compress: true,
       watchOptions: {
             aggregateTimeout: 300,
-            poll: 2000
+            poll: 5000
       },
       historyApiFallback: true
     },
@@ -42,24 +42,28 @@ module.exports = {
                 loader: "url"
             },
             {
-              test: /\.svg$/,
-              loader: 'url'
+                test: /\.png$/,
+                loader: "url"
             },
             {
-              test: /\.woff$/,
-              loader: 'url'
+                test: /\.svg$/,
+                loader: 'url'
             },
             {
-              test: /\.woff2$/,
-              loader: 'url'
+                test: /\.woff$/,
+                loader: 'url'
             },
             {
-              test: /\.[ot]tf$/,
-              loader: 'url'
+                test: /\.woff2$/,
+                loader: 'url'
             },
             {
-              test: /\.eot$/,
-              loader: 'url'
+                test: /\.[ot]tf$/,
+                loader: 'url'
+            },
+            {
+                test: /\.eot$/,
+                loader: 'url'
             }
         ]
     },

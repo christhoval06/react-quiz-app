@@ -4,11 +4,11 @@ import {browserHistory} from 'react-router';
 let correctAnswer = 0;
 
 let question = [
-  {question:'What does Darth Vader say to Luke Skywalker in Episode 5?',
+  {question:'What does Darth Vader say to Luke Skywalker in the Episode 5: Emprie Strikes Back after he cuts off his hand?',
   answer: '1'},
-  {question:'Every Star Wars movie has been released in which month?',
+  {question:'Which month were the original Star Wars trilogy released?',
   answer: '2'},
-  {question: 'How many languages is C3PO fluent in?',
+  {question: 'C3PO is fluent in how many languages?',
   answer: '3'}
 ]
 
@@ -17,6 +17,7 @@ let question = [
 // 3 Over 6 million
 
 export default class QuestionBox extends React.Component {
+  
   constructor(props) {
     super(props);
     this.state = {

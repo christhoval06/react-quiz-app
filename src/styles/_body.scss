@@ -14,5 +14,6 @@ body {
       rgba(0, 0, 0, 0.20)
       100%),
   url(../images/starwars.jpg) no-repeat center center;
-  @extend .width-height;
+  width: 100vw;
+  height: 100vh;
 }
