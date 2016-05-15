@@ -1,6 +1,17 @@
+// Key frames
 @keyframes blinker {
   50% { opacity: 0.0; }
 }
+@keyframes moveup {
+    0% {
+        top: 500px;
+    }
+    100% {
+        top: -500px;
+    }
+}
+
+// Pages
 .accept {
   background: rgba(29, 201, 46, 0.65);
   @extend .width-height;
@@ -12,6 +23,8 @@
   .rocket {
     color: white;
     transform: rotate(-45deg);
+    animation: moveup 5s infinite normal ease-out;
+    position: relative;
   }
   @include tablet {
     width: 85vw

@@ -16,6 +16,13 @@ class Rocket extends React.Component {
 }
 
 export default class Accepted extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      accept: false
+    }
+  }
+  
   render() {
     return(
       <div className="accept">

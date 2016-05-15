@@ -1,4 +1,4 @@
-
+// Timer
 .timer {
     border: 1px solid orange;
     color: #37cd1f;
@@ -12,6 +12,7 @@
     font-family: 'timer', 'opensans', sans-serif;
     @extend .center;
 }
+// Begin Button
 .begin-button {
   width: 200px;
   height: 60px;
@@ -26,6 +27,8 @@
     background: rgba(25, 166, 210, 0.73);
   }
 }
+
+// Question Box
 .question-box {
   background: white;
   width: 300px;
