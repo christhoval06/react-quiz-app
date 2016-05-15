@@ -9,6 +9,10 @@
   h1 {
     animation: blinker 1s linear 4;
   }
+  .rocket {
+    color: white;
+    transform: rotate(-45deg);
+  }
   @include tablet {
     width: 85vw
   }
