@@ -9,7 +9,8 @@
     position: absolute;
     top: 10px;
     right: 10px;
-    transition: all 0.5s ease-in-out;
+    font-family: 'timer', 'opensans', sans-serif;
+    @extend .center;
 }
 .begin-button {
   width: 200px;
@@ -75,35 +76,4 @@
 }
 .uppercase {
   text-transform: uppercase;
-}
-
-@keyframes blinker {
-  50% { opacity: 0.0; }
-}
-.accept {
-  background: rgba(29, 201, 46, 0.65);
-  @extend .width-height;
-  @extend .font-page;
-  @extend .center;
-  animation: blinker 1s linear 4;
-  @include tablet {
-    width: 89vw;
-  }
-}
-.reject {
-  background: rgba(189, 36, 36, 0.65);
-  @extend .width-height;
-  @extend .font-page;
-  @extend .center;
-  animation: blinker 1s linear 4;
-  @include tablet {
-    width: 89vw;
-  }
-}
-
-.error {
-  background: black;
-  @extend .font-page;
-  @extend .width-height;
-  @extend .center;
 }

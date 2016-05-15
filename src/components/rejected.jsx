@@ -20,7 +20,7 @@ export default class Rejected extends React.Component {
     return(
       <div className="reject">
             Rejected
-
+            {this._reload.bind(this)}
       </div>
     )
   }

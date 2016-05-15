@@ -14,10 +14,10 @@
   }
   .starwars {
     text-transform: uppercase;
+    font-family: 'distant', 'opensans', sans-serif;
     color: #dedede;
     transform: rotate(270deg);
     font-size: 70px;
-    font-weight: bold;
   }
   .circle-logo {
     background: url(../images/death-star.png) no-repeat center center;
