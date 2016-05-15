@@ -21,6 +21,7 @@
   color: white;
   background: rgb(171, 171, 171);
   border: 0;
+  box-shadow: 3px 7px 25px -1px rgba(0,0,0,0.75);
   &:hover {
     background: rgba(25, 166, 210, 0.73);
   }
@@ -33,9 +34,10 @@
   align-items: flex-start;
   flex-direction: column;
   padding: 0 30px;
-  @include tablet {
-    width: 500px;
-    height: 200px;
+  box-shadow: 3px 7px 25px -1px rgba(0,0,0,0.75);
+  @include desktop {
+    width: 700px;
+    height: 300px;
   }
   h3 {
     color: #777777;
@@ -44,19 +46,19 @@
     line-height: 1.5;
   }
   input {
-    width: 200px;
+    width: 250px;
     outline: none;
     border-bottom: 1px solid rgb(92, 91, 90);
     border-top: 0;
     border-left: 0;
     border-right: 0;
     font-size: 20px;
-    @include tablet {
-      width: 400px;
+    margin-bottom: 30px;
+    @include desktop {
+      width: 600px;
     }
   }
   .submit-button {
-    width: 150px;
     padding: 10px 20px;
     width: 200px;
     height: 60px;
@@ -66,9 +68,8 @@
     color: white;
     background: rgb(173, 168, 168);
     border: 0;
-    position: absolute;
-    bottom: 40px;
-    right: 40px;
+    box-shadow: 3px 7px 25px -1px rgba(0,0,0,0.75);
+    float: right;
     &:hover {
       background: rgba(#9c20b0, 0.61);
     }
