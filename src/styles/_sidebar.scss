@@ -2,11 +2,16 @@
   width: 158px;
   height: 100vh;
   background: white;
-  display: flex;
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
-
+  display:none;
+  @include tablet {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+  }
   .starwars {
     text-transform: uppercase;
     color: #dedede;

@@ -21,7 +21,7 @@ export default class Rejected extends React.Component {
       <div className="reject">
             Rejected
 
-        </div>
+      </div>
     )
   }
 }
