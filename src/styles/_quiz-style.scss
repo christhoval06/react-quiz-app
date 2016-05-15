@@ -69,17 +69,22 @@
   text-transform: uppercase;
 }
 
+@keyframes blinker {
+  50% { opacity: 0.0; }
+}
 .accept {
   background: rgba(29, 201, 46, 0.65);
   @extend .font-page;
   @extend .width-height;
   @extend .center;
+  animation: blinker 1s linear 4;
 }
 .reject {
   background: rgba(189, 36, 36, 0.65);
   @extend .font-page;
   @extend .width-height;
   @extend .center;
+  animation: blinker 1s linear 4;
 }
 
 .error {

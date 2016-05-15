@@ -21,10 +21,15 @@ export default class Timer extends React.Component {
       this.timer = null;
     }
   }
+
   _renderMinutes() {
     let minutes = Math.floor(this.state.secondsRemaining / 60);
     let seconds = this.state.secondsRemaining % 60;
     seconds = seconds < 10 ? '0' + seconds : seconds;
+
+    if (this.state.secondsRemaining === 0) {
+      browserHistory.push('/rejected');
+    };
 
     return (<div>{minutes}:{seconds}</div>)
   }
