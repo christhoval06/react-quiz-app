@@ -6,8 +6,13 @@
   @extend .width-height;
   @extend .font-page;
   @extend .center;
-  animation: blinker 1s linear 4;
+  h1 {
+    animation: blinker 1s linear 4;
+  }
   @include tablet {
+    width: 85vw
+  }
+  @include desktop {
     width: 89vw;
   }
 }
@@ -16,8 +21,13 @@
   @extend .width-height;
   @extend .font-page;
   @extend .center;
-  animation: blinker 1s linear 4;
+  h1 {
+    animation: blinker 1s linear 4;
+  }
   @include tablet {
+    width: 85vw
+  }
+  @include desktop {
     width: 89vw;
   }
 }
@@ -27,4 +37,10 @@
   @extend .font-page;
   @extend .width-height;
   @extend .center;
+  @include tablet {
+    width: 85vw
+  }
+  @include desktop {
+    width: 89vw;
+  }
 }
