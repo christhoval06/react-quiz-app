@@ -1,4 +1,12 @@
 // Timer
+@keyframes slidein {
+  0% {
+    right: -100px;
+  }
+  100% {
+    right: 0px;
+  }
+}
 .timer {
     border: 1px solid orange;
     color: #37cd1f;
@@ -11,6 +19,7 @@
     right: 10px;
     font-family: 'timer', 'opensans', sans-serif;
     @extend .center;
+    animation: slidein 1s 1 normal ease-in;
 }
 // Begin Button
 .begin-button {

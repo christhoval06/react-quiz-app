@@ -7,9 +7,9 @@ let question = [
   {question:'What does Darth Vader say to Luke Skywalker in the Episode 5: Emprie Strikes Back after he cuts off his hand?',
   answer: '1'},
   {question:'Which month were the original Star Wars trilogy released?',
-  answer: '2'},
+  answer: '1'},
   {question: 'C3PO is fluent in how many languages?',
-  answer: '3'}
+  answer: '1'}
 ]
 
 // 1 No. I am your father.
@@ -17,11 +17,11 @@ let question = [
 // 3 Over 6 million
 
 export default class QuestionBox extends React.Component {
-  
+
   constructor(props) {
     super(props);
     this.state = {
-      current: 0,
+      current: 0
     }
   }
 

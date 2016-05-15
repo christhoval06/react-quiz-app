@@ -23,7 +23,7 @@
   .rocket {
     color: white;
     transform: rotate(-45deg);
-    animation: moveup 5s infinite normal ease-out;
+    animation: moveup 5s 1 normal ease-out;
     position: relative;
   }
   @include tablet {
@@ -38,6 +38,22 @@
   @extend .width-height;
   @extend .font-page;
   @extend .center;
+  flex-direction: column;
+  button {
+    margin-top: 30px;
+    width: 200px;
+    height: 60px;
+    font-size: 20px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    color: white;
+    background: rgb(171, 171, 171);
+    border: 0;
+    box-shadow: 3px 7px 25px -1px rgba(0,0,0,0.75);
+    &:hover {
+      background: rgba(21, 22, 22, 0.72);
+    }
+  }
   h1 {
     animation: blinker 1s linear 4;
   }

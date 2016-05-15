@@ -22,12 +22,13 @@ export default class Accepted extends React.Component {
       accept: false
     }
   }
-  
+
+
   render() {
     return(
       <div className="accept">
         <Rocket />
-        {/*<h1>Accepted</h1>*/}
+
       </div>
     )
   }

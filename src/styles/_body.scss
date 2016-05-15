@@ -5,6 +5,7 @@ body {
   font-style: normal;
   color: #ffffff;
   display: flex;
+  overflow: hidden;
 }
 #starwars-app {
   @extend .center;
