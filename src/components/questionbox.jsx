@@ -5,16 +5,12 @@ let correctAnswer = 0;
 
 let question = [
   {question:'What does Darth Vader say to Luke Skywalker in the Episode 5: Emprie Strikes Back after he cuts off his hand?',
-  answer: '1'},
+  answer: 'No. I am your father.'},
   {question:'Which month were the original Star Wars trilogy released?',
-  answer: '1'},
+  answer: 'May'},
   {question: 'C3PO is fluent in how many languages?',
-  answer: '1'}
+  answer: 'Over 6 million'}
 ]
-
-// 1 No. I am your father.
-// 2 May
-// 3 Over 6 million
 
 export default class QuestionBox extends React.Component {
 

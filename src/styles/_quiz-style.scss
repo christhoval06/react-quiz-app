@@ -1,4 +1,5 @@
 // Timer
+
 @keyframes slidein {
   0% {
     right: -100px;
@@ -22,7 +23,9 @@
     animation: slidein 1s 1 normal ease-in;
     text-shadow: 0 0 2px lime, 0 0 8px rgba(0, 255, 0, 0.5), 0 0 10px rgba(0, 255, 0, 0.8);
 }
+
 // Begin Button
+
 .begin-button {
   width: 200px;
   height: 60px;
@@ -39,6 +42,7 @@
 }
 
 // Question Box
+
 .question-box {
   background: white;
   width: 300px;
