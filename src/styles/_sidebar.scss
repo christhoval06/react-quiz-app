@@ -15,7 +15,7 @@
   .starwars {
     text-transform: uppercase;
     font-family: 'distant', 'opensans', sans-serif;
-    color: #dedede;
+    color: #c2c2c2;
     transform: rotate(270deg);
     font-size: 70px;
   }
@@ -27,5 +27,6 @@
     width: 100px;
     align-self: center;
     margin-bottom: 250px;
+    text-shadow: 5px 1px 2px rgba(150, 150, 150, 1);
   }
 }

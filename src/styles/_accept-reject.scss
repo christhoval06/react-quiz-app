@@ -4,10 +4,11 @@
 }
 @keyframes moveup {
     0% {
-        top: 500px;
-    }
-    100% {
         top: -500px;
+    }
+
+    100% {
+        top: 10px;
     }
 }
 

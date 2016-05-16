@@ -20,6 +20,7 @@
     font-family: 'timer', 'opensans', sans-serif;
     @extend .center;
     animation: slidein 1s 1 normal ease-in;
+    text-shadow: 0 0 2px lime, 0 0 8px rgba(0, 255, 0, 0.5), 0 0 10px rgba(0, 255, 0, 0.8);
 }
 // Begin Button
 .begin-button {

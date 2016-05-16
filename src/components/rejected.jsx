@@ -6,7 +6,7 @@ import {browserHistory} from 'react-router';
 
 export default class Rejected extends React.Component {
   _loadWelcome(){
-    browserHistory.push('/welcome');
+    browserHistory.push('/quiz');
   }
 
   render() {
