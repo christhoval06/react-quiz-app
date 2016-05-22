@@ -11,5 +11,5 @@
 </ul>
 
 <h2>What did I learn?</h2>
-<p>Every single person in my class struggled with this project. React has a very high learning curve but once you understand key concepts such as this.state and this.props, patterns start to appear making it easier to understand and code. React's modular structure really  helped me organize and write my code methodically, which I really enjoyed. I see a lot of potential in React as you can branch off into React Native once you have a solid understanding of React. I look forward to working with this language in the future.</p>
+<p>Every single person in my class struggled with this project. React has a very high learning curve, however, once you understand key concepts such as this.state and this.props, patterns start to appear, making it easier to code. React's modular structure really  helped me organize and write my code methodically, which I really enjoyed. I see a lot of potential in React as you can branch off into React Native once you have a solid understanding of React. I look forward to working with this language in the future.</p>
 
