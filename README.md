@@ -8,6 +8,7 @@
 <li>CSS/SASS (animations)</li>
 <li>Webpack (browsersync)</li>
 <li>Git/Github</li>
+<li>Vagrant</li>
 </ul>
 
 <h2>What did I learn?</h2>
