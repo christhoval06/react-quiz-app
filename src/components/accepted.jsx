@@ -1,8 +1,6 @@
 import React from 'react';
 import {browserHistory} from 'react-router';
-import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import FontAwesome from 'react-fontawesome';
-
 
 class Rocket extends React.Component {
   render() {
@@ -17,7 +15,6 @@ class Rocket extends React.Component {
 }
 
 export default class Accepted extends React.Component {
-
 
   render() {
     return(
